@@ -73,8 +73,7 @@ class AgentDocumentTableExtractor:
         for row in norm_rows[1:]:
             data_lines.append("| " + " | ".join(str(cell).ljust(widths[i]) for i, cell in enumerate(row)) + " |")
 
-        return "
-".join([header_line, sep_line] + data_lines)
+        return "\n".join([header_line, sep_line] + data_lines)
 
     def table_to_typed_json(self, rows):
         if len(rows) < 2:

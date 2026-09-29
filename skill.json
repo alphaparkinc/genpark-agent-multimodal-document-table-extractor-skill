@@ -1,0 +1,32 @@
+{
+  "name": "genpark-agent-multimodal-document-table-extractor-skill",
+  "version": "1.0.0",
+  "description": "Heuristic multi-column document and tabular markdown extractor converting ASCII/OCR text dumps, aligned spacing, and CSV/TSV into clean GitHub Flavored Markdown and typed JSON.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "table-extractor",
+    "markdown-tables",
+    "mineru",
+    "document-parser",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "extract_tables_from_text",
+      "description": "Parse and extract multi-column tables from plain or OCR text."
+    },
+    {
+      "name": "table_to_markdown",
+      "description": "Convert tabular matrix into aligned GitHub Flavored Markdown table."
+    },
+    {
+      "name": "table_to_typed_json",
+      "description": "Convert tabular matrix into strongly-typed JSON records."
+    },
+    {
+      "name": "run_table_benchmark",
+      "description": "Run document table extraction benchmark."
+    }
+  ]
+}
